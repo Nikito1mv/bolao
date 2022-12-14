@@ -75,9 +75,90 @@
     </p>
     <p>
         <?php
-            $p2->comecarPartida(5, 3);
+            $p2->comecarPartida(0, 0);
 
             print_r("Partida 2 {$p2->getStatus()}");
+        ?>
+    </p>
+    <p>
+        <?php
+            $p1->confirmaVencedor();
+            $p1->finalizarPartida();
+
+            print_r("Partida 1 {$p1->getStatus()}");
+        ?>
+    </p>
+    <p>
+        <?php
+            echo nl2br($p1->placar());
+        ?>
+    </p>
+    <p>
+        <?php
+            $p2->confirmaVencedor();
+            $p2->finalizarPartida();
+
+            print_r("Partida 2 {$p2->getStatus()}");
+        ?>
+    </p>
+    <p>
+        <?php
+            echo nl2br($p2->placar());
+        ?>
+    </p>
+    <p>
+        <?php
+
+        ?>
+    </p>
+    <p>
+        <?php
+
+        ?>
+    </p>
+    <p>
+        <?php
+
+        ?>
+    </p>
+    <p>
+        <?php
+
+        ?>
+    </p>
+    <p>
+        <?php
+
+        ?>
+    </p>
+    <p>
+        <?php
+
+        ?>
+    </p>
+    <p>
+        <?php
+
+        ?>
+    </p>
+    <p>
+        <?php
+
+        ?>
+    </p>
+    <p>
+        <?php
+
+        ?>
+    </p>
+    <p>
+        <?php
+
+        ?>
+    </p>
+    <p>
+        <?php
+
         ?>
     </p>
 

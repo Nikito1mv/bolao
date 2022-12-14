@@ -15,10 +15,14 @@ class Partida {
     private $golsA;
     private $golsB;
     private $status;
+    private $vencedor;
+    private $perdedor;
+    private $empate; //boolean
     
     // Métodos
     public function __construct() {
         $this->status = "aguardando";
+        $this->empate = FALSE;
     }
 
     
@@ -40,19 +44,45 @@ class Partida {
         $this->timeB->jogarPartida($golsB, $golsA);
         $this->status = "aberto";
     }
+
+    public function confirmaVencedor() {
+        if ($this->golsA > $this->golsB) {
+            $this->vencedor = $this->timeA;
+            $this->perdedor = $this->timeB;
+        } elseif ($this->golsA == $this->golsB) {
+            $this->empate = TRUE;
+        } else {
+            $this->vencedor = $this->timeB;
+            $this->perdedor = $this->timeA;
+        }
+    }
     
     public function finalizarPartida() {
-        if($this->golsA > $this->golsB) {
-            $this->timeA->ganharPartida();
-            $this->timeB->perderPartida();
-        } elseif ($this->golsA == $this->golsB) {
+        if($this->empate) {
             $this->timeA->empatarPartida();
             $this->timeB->empatarPartida();
+            exit;
+        } 
+        if ($this->golsA > $this->golsB) {
+            $this->timeA->ganharPartida();
+            $this->timeB->perderPartida();
         } else {
             $this->timeA->perderPartida();
             $this->timeB->ganharPartida();
         }
     }
+
+    public function placar() {
+        if ($this->empate) {
+            return "Placar: {$this->timeA->getNome()} {$this->golsA} X {$this->golsB} {$this->timeB->getNome()} \n
+        Jogo empatado";
+        }
+        return "Placar: {$this->timeA->getNome()} {$this->golsA} X {$this->golsB} {$this->timeB->getNome()} \n
+        Vencedor: {$this->vencedor->getNome()} \n
+        Perdedor: {$this->perdedor->getNome()}";
+    }
+
+
     
     public function getData() {
         return $this->data;
