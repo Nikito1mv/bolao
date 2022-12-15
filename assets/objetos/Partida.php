@@ -46,27 +46,22 @@ class Partida {
     }
 
     public function confirmaVencedor() {
-        if ($this->golsA > $this->golsB) {
-            $this->vencedor = $this->timeA;
-            $this->perdedor = $this->timeB;
-        } elseif ($this->golsA == $this->golsB) {
-            $this->empate = TRUE;
-        } else {
-            $this->vencedor = $this->timeB;
-            $this->perdedor = $this->timeA;
-        }
+        
     }
     
     public function finalizarPartida() {
-        if($this->empate) {
-            $this->timeA->empatarPartida();
-            $this->timeB->empatarPartida();
-            exit;
-        } 
         if ($this->golsA > $this->golsB) {
+            $this->vencedor = $this->timeA;
+            $this->perdedor = $this->timeB;
             $this->timeA->ganharPartida();
             $this->timeB->perderPartida();
+        } elseif ($this->golsA == $this->golsB) {
+            $this->empate = TRUE;
+            $this->timeA->empatarPartida();
+            $this->timeB->empatarPartida();
         } else {
+            $this->vencedor = $this->timeB;
+            $this->perdedor = $this->timeA;
             $this->timeA->perderPartida();
             $this->timeB->ganharPartida();
         }
