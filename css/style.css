@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: 0;
+    font-size: 20px;
+    font-family: 'Antonio', sans-serif;
+}
+
+body {
+    background: #187518;
+    
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #252525;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    padding-left: 40px;
+    padding-right: 10px;
+}
+
+.header div {
+    align-items: center;
+    font-size: 15px;
+}
+
+.btn_nav{
+    padding: 15px;
+    padding-inline: 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.btn_nav:hover{
+    color: #fff;
+    background: rgb(255, 201, 53);
+}
+
+
+
+.caixa {
+    display: flex;
+    height: 100%;
+}
+
+
+.left-sidebar {
+    display: block;
+    background: #252525;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+.right-sidebar {
+    display: block;
+    background: #252525;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.menu {
+    padding-bottom: 30px;
+}
+
+.image_logo {
+    width: 150px;
+    padding-bottom: 20px;
+}
+
+.btn_menu{
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.btn_menu:hover{
+    color: #fff;
+    background: rgb(255, 201, 53);
+}
+
+.btn_inicio{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.btn_inicio:hover{
+    color: rgb(255, 201, 53);
+}
+
+
+.main-content {
+    background-image: url(../images/campo2.png);
+}
+
+.container {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cor {
+    background: #117e2c63;
+}
+
+.topo_main {
+    background: #0c123d94;
+    color: #fff;
+    height: 4rem;
+    width: 100rem;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+.sublinhado {
+    text-decoration: underline;
+    font-style: italic;
+    color: rgb(255, 201, 53);
+    cursor: pointer;
+}
+
+.sublinhado:hover{
+    color: #fff;
+}
+
+.partida {
+    background: #29292994;
+    color: #fff;
+    height: 12rem;
+    width: 28rem;
+    margin-top: 20px;
+    margin-top: 20px;
+    display: block;
+    flex-wrap: wrap;
+    padding: 1px;
+}
+
+.flag {
+    width: 110px;
+    height: 70px;
+}
+
+.xzinho {
+    width: 40px;
+}
+
+.linha1 {
+    margin: 20px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.format1 {
+    font-size: 20px;
+}
+
+.linha2 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.format2 {
+    font-size: 25px;
+}
+
+
+
+#fname{
+    width: 40px;
+}
+
+.linha3 {
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.format3 {
+    font-size: 20px;
+}

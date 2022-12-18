@@ -1,23 +1,105 @@
-<?php 
-    require_once 'assets/objetos/Team.php';
-    require_once 'assets/objetos/Partida.php';
-?>
+<?php include "config.php"; ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" >
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <title>Bolão 2022</title>
+
 </head>
-
 <body>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+    <!--header começo-->
+    <div class="header">
+        <h2>World Cup</h2>
+
+        <div>
+            <a href="#" class="btn_nav">Sair</a>
+            <a href="login_cadastro/tela_cadastro.php" class="btn_nav">Cadastra-se</a>
+            <a href="login_cadastro/tela_login.php" class="btn_nav">Entrar</a>
+        </div>
+    </div>
+    <!--header final-->
+
+    <!-- Início do corpo do site -->
+    <div class="caixa">
+
+        <!-- Início da barra lateral esquerda -->
+        <div class="left-sidebar col-2" style="order: 0">
+            <a href="#">
+                <img src="images/FIFA-World-Cup-Qatar-logo-png.png" class="image_logo" alt="">
+            </a>
+            <div class="menu">
+                <a href="#" class="btn_inicio">
+                    <h3>INÍCIO</h3>
+                </a>
+            </div>
+            <div class="menu">
+                <a href="#" class="btn_menu">
+                    <ion-icon name="calendar-clear-outline"></ion-icon>
+                    PONTUAÇÃO
+                </a>
+            </div>
+            <div class="menu">
+                <a href="#" class="btn_menu">
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                    MINHAS APOSTAS
+                </a>
+            </div>
+            <div class="menu">
+                <a href="#" class="btn_menu">
+                    <ion-icon name="camera-outline"></ion-icon>
+                    JOGOS
+                </a>
+            </div>
+            <div class="menu">
+                <a href="#" class="btn_menu">
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                    FAZER NOVA APOSTA
+                </a>
+            </div>
+            
+        </div>
+        <!-- Fim da barra lateral esquerda -->
+        
+        <!-- Início do conteúdo do site -->
+        <div class="main-content col-9" style="order: 1">
+            <div class="cor">
+                <?php include "tamplates/fazer_aposta_vm.php"; ?>
+            </div>
+        </div>
+        <!-- Fim do conteúdo do site -->
+        
+        <!-- Início da barra lateral direita -->
+        <div class="right-sidebar col-1" style="order: 2">
+            <div class="menu">
+                <a href="#" class="btn_menu">
+                    <ion-icon name="calendar-clear-outline"></ion-icon>
+                    OPÇÕES
+                </a>
+            </div>
+        </div>
+        <!-- Fim da barra lateral direita -->
+
+    </div>
+    <!-- Fim do corpo do site -->
+
+
+	
+		
+		
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

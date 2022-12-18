@@ -1,0 +1,21 @@
+<?php
+            $sql = "SELECT * FROM dados_jogos";
+            $query = $mysqli->query($sql);
+            $i = 1;
+            $j = 2;
+            while ($dados = $query->fetch_array()){
+        ?>
+        <div class="row">
+            <div class="col-12">
+            Data do Jogo: <?php echo $dados['data']; ?> - 
+            Hora do Jogo: <?php echo $dados['horario']; ?> - 
+            Estadio: <?php echo $dados['local']; ?> - <br> 
+            <img src="_images/<?php echo $dados['timea']; ?>.png">
+            <?php echo $dados['timea']; ?>
+            <input type="text" class="form-control" width="20px" name="cp<?php echo $i; ?>"> x 
+            <input type="text" name="cp<?php echo $j; ?>" class="form-control" width="20px">
+            <img src="_images/<?php echo $dados['timeb']; ?>.png"><br>
+            </div>
+            
+        </div>
+        <?php $i++;$j++;} ?>
