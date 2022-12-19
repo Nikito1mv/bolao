@@ -62,6 +62,11 @@
                         <div class="status col format3">
                             Status: <?php echo $dados['status_jogo']; ?>
                         </div>
+                        <div class="tipo col format3">
+                            <button type="button" 
+                            <?php  ?>
+                            onclick="alert('Hello world!')">CONFIRMAR</button>
+                        </div>
                     </div>
 
                 </div>
