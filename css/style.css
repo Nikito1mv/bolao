@@ -183,11 +183,11 @@ body {
     font-size: 25px;
 }
 
-
-
-#fname{
+.format2 input{
     width: 40px;
     border-radius: 30%;
+    justify-items: center;
+    padding-left: 12px;
 }
 
 .linha3 {
@@ -200,4 +200,19 @@ body {
 
 .format3 {
     font-size: 20px;
+}
+
+button{
+    background-color: rgb(255, 201, 53);
+    border: 1px;
+    padding: 5px;
+    border-radius: 10px;
+    color: rgb(12, 10, 10);
+    cursor:pointer ;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: rgb(255, 255, 255);
+
 }

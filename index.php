@@ -1,4 +1,4 @@
-<?php include "config.php"; ?>
+<?php include "_scripts/config.php"; ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -37,33 +37,33 @@
 
         <!-- Início da barra lateral esquerda -->
         <div class="left-sidebar col-2" style="order: 0">
-            <a href="#">
+            <a href="index.php">
                 <img src="images/FIFA-World-Cup-Qatar-logo-png.png" class="image_logo" alt="">
             </a>
-            <div class="menu">
-                <a href="#" class="btn_inicio">
+            <div class="inicio menu">
+                <a href="index.php" class="btn_inicio">
                     <h3>INÍCIO</h3>
                 </a>
             </div>
-            <div class="menu">
+            <div class="pntuacao menu">
                 <a href="#" class="btn_menu">
                     <ion-icon name="calendar-clear-outline"></ion-icon>
                     PONTUAÇÃO
                 </a>
             </div>
-            <div class="menu">
+            <div class="minhas_apostas menu">
                 <a href="#" class="btn_menu">
                     <ion-icon name="information-circle-outline"></ion-icon>
                     MINHAS APOSTAS
                 </a>
             </div>
-            <div class="menu">
+            <div class="jogos menu">
                 <a href="#" class="btn_menu">
                     <ion-icon name="camera-outline"></ion-icon>
                     JOGOS
                 </a>
             </div>
-            <div class="menu">
+            <div class="nova_aposta menu">
                 <a href="#" class="btn_menu">
                     <ion-icon name="information-circle-outline"></ion-icon>
                     FAZER NOVA APOSTA
@@ -75,7 +75,7 @@
         
         <!-- Início do conteúdo do site -->
         <div class="main-content col-9" style="order: 1">
-            <div class="cor">
+            <div class="main cor">
                 <?php include "tamplates/fazer_aposta_vm.php"; ?>
             </div>
         </div>
@@ -83,7 +83,7 @@
         
         <!-- Início da barra lateral direita -->
         <div class="right-sidebar col-1" style="order: 2">
-            <div class="menu">
+            <div class="opcoes menu">
                 <a href="#" class="btn_menu">
                     <ion-icon name="calendar-clear-outline"></ion-icon>
                     OPÇÕES
