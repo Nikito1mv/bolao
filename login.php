@@ -27,11 +27,11 @@
             </div>
             <form class="user" method="POST" action="_scripts/autenticar.php">
                 <div class="input_email row">
-                    <input type="email" id="exampleInputEmail" aria-describedby="emailHelp"
+                    <input type="email" id="email" aria-describedby="emailHelp"
                     placeholder="Digite seu e-mail" name='email' required>
                 </div>
                 <div class="input_senha row">
-                    <input type="passoword" id="exampleInputPassword" 
+                    <input type="passoword" id="senha" 
                     placeholder="Digite sua senha" name='senha' required>
                 </div>
                 <div class="btn_entrar row">

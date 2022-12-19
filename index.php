@@ -26,8 +26,8 @@
 
         <div>
             <a href="#" class="btn_nav">Sair</a>
-            <a href="login_cadastro/tela_cadastro.php" class="btn_nav">Cadastra-se</a>
-            <a href="login_cadastro/tela_login.php" class="btn_nav">Entrar</a>
+            <a href="cadastro.php" class="btn_nav">Cadastra-se</a>
+            <a href="login.php" class="btn_nav">Entrar</a>
         </div>
     </div>
     <!--header final-->
@@ -57,10 +57,10 @@
                     MINHAS APOSTAS
                 </a>
             </div>
-            <div class="jogos menu">
+            <div class="resultados menu">
                 <a href="#" class="btn_menu">
                     <ion-icon name="camera-outline"></ion-icon>
-                    JOGOS
+                    RESULTADOS
                 </a>
             </div>
             <div class="nova_aposta menu">
@@ -76,7 +76,11 @@
         <!-- Início do conteúdo do site -->
         <div class="main-content col-9" style="order: 1">
             <div class="main cor">
-                <?php include "tamplates/fazer_aposta_vm.php"; ?>
+                <?php 
+                // include "tamplates/fazer_aposta.php"; 
+                // include "tamplates/resultados.php"; 
+                include "tamplates/meus_palpites.php"; 
+                ?>
             </div>
         </div>
         <!-- Fim do conteúdo do site -->

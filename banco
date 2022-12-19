@@ -90,13 +90,13 @@ COMMIT;
 
 
 CREATE TABLE `aposta` (
-  'id' int(11) NOT NULL,
-  'id_dados_jogos' int(11) NOT NULL,
-  't1' int(11) NOT NULL,
-  't2' int(11) NOT NULL,
-  'login' varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-  'data' datetime NOT NULL,
-  'tipo' varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'NORMAL'
+  `id` int(11) NOT NULL,
+  `id_dados_jogos` int(11) NOT NULL,
+  `t1` int(11) NOT NULL,
+  `t2` int(11) NOT NULL,
+  `login` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `data` datetime NOT NULL,
+  `tipo` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'NORMAL'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
@@ -126,3 +126,9 @@ INSERT INTO `dados_jogos` (`id`, `data`, `horario`, `timea`, `timeb`, `local`, `
 (),
 (),
 ();
+
+insert into `minhas_apostas`  (`id`, `id_jogo`, `rt1`, `rt2`) values
+	(1, 1, 0, 0),
+	(2, 2, 1, 1),
+	(3, 3, 2, 0),
+;
