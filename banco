@@ -90,13 +90,13 @@ COMMIT;
 
 
 CREATE TABLE `aposta` (
-  'id' int(11) NOT NULL,
-  'id_dados_jogos' int(11) NOT NULL,
-  't1' int(11) NOT NULL,
-  't2' int(11) NOT NULL,
-  'login' varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-  'data' datetime NOT NULL,
-  'tipo' varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'NORMAL'
+  `id` int(11) NOT NULL,
+  `id_dados_jogos` int(11) NOT NULL,
+  `t1` int(11) NOT NULL,
+  `t2` int(11) NOT NULL,
+  `login` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `data` datetime NOT NULL,
+  `tipo` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'NORMAL'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
@@ -107,22 +107,3 @@ ALTER TABLE `aposta`
   ALTER TABLE `aposta`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
-
-
-CREATE TABLE `usuario` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(255) DEFAULT NULL,
-  `cpf` varchar(11) DEFAULT NULL,
-  `login` varchar(100) DEFAULT NULL,
-  `email` varchar(150) DEFAULT NULL,
-  `telefone` varchar(11) DEFAULT NULL,
-  `senha` varchar(100) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-);
-
-
-INSERT INTO `dados_jogos` (`id`, `data`, `horario`, `timea`, `timeb`, `local`, `tipo`, `rodada`, `rt1`, `rt2`, `status_jogo`) VALUES
-(),
-(),
-(),
-();

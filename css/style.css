@@ -216,3 +216,11 @@ button:hover{
     background-color: rgb(255, 255, 255);
 
 }
+
+.labelgol h5{
+    padding: 10px;
+    background: #fff;
+    color: #0d1368;
+    border-radius: 10px;
+    font-size: 25px;
+}
