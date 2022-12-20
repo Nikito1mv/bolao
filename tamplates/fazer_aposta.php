@@ -11,7 +11,7 @@
             $a = 1;
             while ($dados = $query->fetch_array()){
             ?>
-            <form  method="POST" action="<?php include "_scripts/cad_aposta.php"; ?>">
+            <form  method="POST" action=" <?php cad_aposta() ?> ">
                 <div class="partida">
                 <input type="hidden" name="jogo" value="<?php echo $dados['id']; ?>">
                     <div class="local row linha1">
@@ -71,3 +71,21 @@
             
             <?php $a++; } ?>
             </div>
+
+    <?php
+    function cad_aposta() {
+        $login = '';
+        include "config.php";
+        $t1 = $_POST['t1'];
+        $t2 = $_POST['t2'];
+        $jogo = $_POST['jogo'];
+
+        $sql = "INSERT INTO aposta (id_dados_jogos, t1,t2) VALUES ('$jogo','$t1','$t2')";
+        $query=$mysqli->query($sql);
+
+        if($query){
+            ?> <script>alert("oi")</script> <?php
+        }else{
+            echo "Problema na query!";
+        }
+    }
