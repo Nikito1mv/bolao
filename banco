@@ -89,21 +89,26 @@ COMMIT;
 
 
 
+--
+-- Estrutura da tabela `aposta`
+--
+
 CREATE TABLE `aposta` (
   `id` int(11) NOT NULL,
   `id_dados_jogos` int(11) NOT NULL,
   `t1` int(11) NOT NULL,
   `t2` int(11) NOT NULL,
-  `login` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-  `data` datetime NOT NULL,
+  `login` varchar(20) COLLATE utf8_unicode_ci NULL,
+  `data` datetime NULL,
   `tipo` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'NORMAL'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
 
 ALTER TABLE `aposta`
   ADD PRIMARY KEY (`id`);
 
-
-  ALTER TABLE `aposta`
+ALTER TABLE `aposta`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
+
+select * from aposta;
+
