@@ -25,32 +25,18 @@
             <div class="label_login row1">
                 <h1> Cadastro </h1>
             </div>
-            <form class="user" method="POST" action="_scripts/autenticar.php">
+            <form class="user" method="POST" action="_scripts/cadastrar.php">
                 <div class="input_nome row1">
                     <label for="">Nome</label><br>
                     <input type="text" id="nome" placeholder="Digite seu Nome" name='nome' required>
                 </div>
-                <div class="input_cpf row1">
-                <label for="">CPF</label><br>
-                    <input type="text" id="cpf"
-                    placeholder="Digite seu CPF" name='cps' required>
-                </div>
                 <div class="input_email row1">
                 <label for="">E-mail</label><br>
-                    <input type="email" id="email" aria-describedby="emailHelp"
-                    placeholder="Digite seu e-mail" name='email' required>
-                </div>
-                <div class="input_telefone row1">
-                <label for="">Telefone</label><br>
-                    <input type="text" id="telefone"
-                    placeholder="Digite seu telefone" name='telefone' required>
+                    <input type="email" id="email" aria-describedby="emailHelp" placeholder="Digite seu e-mail" name='email' required>
                 </div>
                 <div class="input_senha row1">
                 <label for="">Senha</label><br>
-                    <input type="passoword" id="senha"
-                    placeholder="Digite sua senha" name='semha' required><br>
-                    <input type="passoword" id="confirma_senha" 
-                    placeholder="Comfirme a senha" name='confirma_senha' required>
+                    <input type="passoword" id="senha" placeholder="Digite sua senha" name='senha' required>
                 </div>
                 <div class="btn_cadastrar row1">
                     <button class="btn btn-primary btn-user btn-block">

@@ -18,6 +18,7 @@
             echo "ERROR-02 senha incorreta";
         }else{
             $_SESSION['email'] = $email; 
+            ?> <script>alert("sucesso!!")</script> <?php
             echo "<script>window.location.href='../index.php';</script>";
         }
     }
